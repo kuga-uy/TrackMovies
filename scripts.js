@@ -21,10 +21,6 @@ const createMoviesContainer = (movies) => {
     const movieWrapper = document.createElement("div");
     movieWrapper.setAttribute('class', 'movie_wrapper');
 
-    const movieImgContainer = document.createElement('div');
-    movieImgContainer.setAttribute('class', 'movie_img-container');
-    movieWrapper.appendChild(movieImgContainer);
-    
     /*for each movie will create an image element and set the attribute finded in the api */
    
     const createImg = (movies) =>{
@@ -33,8 +29,12 @@ const createMoviesContainer = (movies) => {
                 let img = document.createElement('img');
                 img.setAttribute('id', 'movie_img');
                 img.setAttribute('src', img_url +  movie.poster_path);
-                img.setAttribute('data-movie-id', movie.id)  ;    
+                img.setAttribute('data-movie-id', movie.id)  ;
+                const movieImgContainer = document.createElement('div');
+                movieImgContainer.setAttribute('id', 'movie_img-container');
+                movieWrapper.appendChild(movieImgContainer);    
                  movieImgContainer.appendChild(img) 
+               
                 return img
             }   
         })
