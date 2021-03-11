@@ -30,7 +30,7 @@ body{
     background-color: $background-color;
     display: flex;
     padding-left: 20px;
-    width: 100%;
+    width: 100vw;
     height: 8vh;
     align-items: center;
     .logo{
@@ -53,14 +53,15 @@ body{
     display: flex;
     position: relative;
     background-color:$section-color ;
-    width: 100%;
+    width: 100vh;
+    height: auto;
     overflow: hidden;
 }
 
 .carousel_slider{
     position: relative;
     display: flex;
-    width: 400%;
+    width: 400vh;
     height: 100vh;
     animation: slide  35s infinite;
     img{
@@ -72,8 +73,8 @@ body{
 .carousel_container::before{
     content: "";
     position: absolute;
-    height: 100%;
-    width: 70%;
+    height: 100vh;
+    width: 70vw;
     z-index: 2;
     background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(20,20,20,0)70%);
 }
@@ -205,4 +206,57 @@ body{
     width:250px;
     height: 420px;
     padding: 30px;
+}
+
+/*responsive*/
+
+
+@media (max-width: 600px){
+
+    #search_btn{
+        width: 60px;
+    }
+    .main_content{
+        width: 80vw;
+    }
+    .container{
+        width: 80vw;
+    }
+    .carousel_container{
+        width: 80vw;
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 80vw;
+    }
+    #movies_section{
+        width: 80vw;
+    }
+    .search_container{
+        width: 200px;
+        height: 2rem;
+    }
+
+    .carousel_container::after, .carousel_container::before{
+        display: none;
+    }
+    .carousel_slider{
+        top:52px;
+        position: relative;
+        display: flex;
+        width: 100vh;
+        height: 40vh;
+        animation: slide  35s infinite;
+        img{
+            width: 100vw;
+        }
+    }
+    .carousel_heading{
+        font-size: 1rem;
+        left: 50%;
+    }
+
+    .search_label{
+        font-size: 1rem;
+    }
 }
