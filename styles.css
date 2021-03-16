@@ -22,7 +22,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-left: 20px;
-  width: 100%;
+  width: 100vw;
   height: 8vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -50,7 +50,8 @@ body {
   display: flex;
   position: relative;
   background-color: #1c256b;
-  width: 100%;
+  width: 100vw;
+  height: auto;
   overflow: hidden;
 }
 
@@ -67,14 +68,16 @@ body {
 
 .carousel_slider img {
   width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .carousel_container::after,
 .carousel_container::before {
   content: "";
   position: absolute;
-  height: 100%;
-  width: 70%;
+  height: 100vh;
+  width: 70vw;
   z-index: 2;
   background: -webkit-gradient(linear, left top, right top, from(black), color-stop(70%, rgba(20, 20, 20, 0)));
   background: linear-gradient(to right, black 0%, rgba(20, 20, 20, 0) 70%);
@@ -263,8 +266,15 @@ body {
 }
 
 #movies_section {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -275,10 +285,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (200px)[5];
-      grid-template-columns: repeat(5, 200px);
   position: relative;
-  top: 40%;
+  top: 60%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #1c256b;
   width: 100%;
 }
@@ -315,5 +325,63 @@ body {
   width: 250px;
   height: 420px;
   padding: 30px;
+}
+
+/*responsive*/
+@media (max-width: 800px) {
+  .carousel_heading {
+    font-size: 2rem;
+    left: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  #search_btn {
+    width: 60px;
+  }
+  .main_content {
+    width: 100vw;
+  }
+  .container {
+    width: 80vw;
+  }
+  .carousel_container {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .navbar {
+    width: 100vw;
+  }
+  #movies_section {
+    width: 80vw;
+  }
+  .search_container {
+    width: 200px;
+    height: 2rem;
+  }
+  .carousel_container::after, .carousel_container::before {
+    display: none;
+  }
+  .carousel_slider {
+    top: 55px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    -webkit-animation: slide  35s infinite;
+            animation: slide  35s infinite;
+  }
+  .carousel_slider img {
+    width: 100%;
+  }
+  .carousel_heading {
+    font-size: 1rem;
+    left: 50%;
+  }
+  .search_label {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
