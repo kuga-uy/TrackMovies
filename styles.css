@@ -50,7 +50,11 @@ body {
   display: flex;
   position: relative;
   background-color: #1c256b;
+<<<<<<< HEAD
   width: 100vw;
+=======
+  width: 100vh;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
   height: auto;
   overflow: hidden;
 }
@@ -60,7 +64,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 400%;
+  width: 400vh;
   height: 100vh;
   -webkit-animation: slide  35s infinite;
           animation: slide  35s infinite;
@@ -328,6 +332,7 @@ body {
 }
 
 /*responsive*/
+<<<<<<< HEAD
 @media (max-width: 800px) {
   .carousel_heading {
     font-size: 2rem;
@@ -335,22 +340,36 @@ body {
   }
 }
 
+=======
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
 @media (max-width: 600px) {
   #search_btn {
     width: 60px;
   }
   .main_content {
+<<<<<<< HEAD
     width: 100vw;
+=======
+    width: 80vw;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
   }
   .container {
     width: 80vw;
   }
   .carousel_container {
+<<<<<<< HEAD
     width: 100vw;
     overflow-x: hidden;
   }
   .navbar {
     width: 100vw;
+=======
+    width: 80vw;
+    overflow-x: hidden;
+  }
+  .navbar {
+    width: 80vw;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
   }
   #movies_section {
     width: 80vw;
@@ -363,18 +382,30 @@ body {
     display: none;
   }
   .carousel_slider {
+<<<<<<< HEAD
     top: 55px;
+=======
+    top: 52px;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 100vh;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
     height: 40vh;
     -webkit-animation: slide  35s infinite;
             animation: slide  35s infinite;
   }
   .carousel_slider img {
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 100vw;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
   }
   .carousel_heading {
     font-size: 1rem;

@@ -54,7 +54,11 @@ body{
     display: flex;
     position: relative;
     background-color:$section-color ;
+<<<<<<< HEAD
     width: 100vw;
+=======
+    width: 100vh;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
     height: auto;
     overflow: hidden;
 }
@@ -63,7 +67,7 @@ body{
     
     position: relative;
     display: flex;
-    width: 400%;
+    width: 400vh;
     height: 100vh;
     animation: slide  35s infinite;
     img{
@@ -215,6 +219,7 @@ body{
 
 /*responsive*/
 
+<<<<<<< HEAD
 @media (max-width: 800px){
     .carousel_heading{
         font-size: 2rem;
@@ -223,6 +228,8 @@ body{
 
 }
 
+=======
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
 
 @media (max-width: 600px){
 
@@ -230,17 +237,29 @@ body{
         width: 60px;
     }
     .main_content{
+<<<<<<< HEAD
         width: 100vw;
+=======
+        width: 80vw;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
     }
     .container{
         width: 80vw;
     }
     .carousel_container{
+<<<<<<< HEAD
         width: 100vw;
         overflow-x: hidden;
     }
     .navbar{
         width: 100vw;
+=======
+        width: 80vw;
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 80vw;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
     }
     #movies_section{
         width: 80vw;
@@ -254,6 +273,7 @@ body{
         display: none;
     }
     .carousel_slider{
+<<<<<<< HEAD
         top:55px;
         position: relative;
         display: flex;
@@ -262,6 +282,16 @@ body{
         animation: slide  35s infinite;
         img{
             width: 100%;
+=======
+        top:52px;
+        position: relative;
+        display: flex;
+        width: 100vh;
+        height: 40vh;
+        animation: slide  35s infinite;
+        img{
+            width: 100vw;
+>>>>>>> 94e531baa4ccb4f5f594ae82b82a11019d36f88f
         }
     }
     .carousel_heading{
